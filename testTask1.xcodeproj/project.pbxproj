@@ -11,10 +11,10 @@
 		4F48DA3E2A4CDB5D007F86F4 /* DishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48DA3D2A4CDB5D007F86F4 /* DishModel.swift */; };
 		4F48DA402A4CDC70007F86F4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48DA3F2A4CDC70007F86F4 /* Coordinator.swift */; };
 		4F48DA432A4CDFD7007F86F4 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48DA422A4CDFD7007F86F4 /* CategoryViewModel.swift */; };
-		4F9B14462A4D932200610065 /* Categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B14452A4D932200610065 /* Categories.json */; };
 		4F9B144A2A4D96BB00610065 /* DishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B14492A4D96BB00610065 /* DishViewModel.swift */; };
 		4F9B144E2A4D98CC00610065 /* Dishes.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B144D2A4D98CC00610065 /* Dishes.json */; };
 		4F9B14512A4DA4FF00610065 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B14502A4DA4FE00610065 /* BundleExtension.swift */; };
+		4F9B14532A4DAA2B00610065 /* Categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B14522A4DAA2B00610065 /* Categories.json */; };
 		4FCB17942A4C46CE00CE395D /* testTask1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB17932A4C46CE00CE395D /* testTask1App.swift */; };
 		4FCB17962A4C46CE00CE395D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB17952A4C46CE00CE395D /* ContentView.swift */; };
 		4FCB17982A4C46CF00CE395D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FCB17972A4C46CF00CE395D /* Assets.xcassets */; };
@@ -34,10 +34,10 @@
 		4F48DA3D2A4CDB5D007F86F4 /* DishModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishModel.swift; sourceTree = "<group>"; };
 		4F48DA3F2A4CDC70007F86F4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4F48DA422A4CDFD7007F86F4 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
-		4F9B14452A4D932200610065 /* Categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Categories.json; sourceTree = "<group>"; };
 		4F9B14492A4D96BB00610065 /* DishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewModel.swift; sourceTree = "<group>"; };
 		4F9B144D2A4D98CC00610065 /* Dishes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Dishes.json; sourceTree = "<group>"; };
 		4F9B14502A4DA4FE00610065 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		4F9B14522A4DAA2B00610065 /* Categories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Categories.json; sourceTree = "<group>"; };
 		4FCB17902A4C46CE00CE395D /* testTask1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testTask1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCB17932A4C46CE00CE395D /* testTask1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTask1App.swift; sourceTree = "<group>"; };
 		4FCB17952A4C46CE00CE395D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 				4FCB17952A4C46CE00CE395D /* ContentView.swift */,
 				4FCB17972A4C46CF00CE395D /* Assets.xcassets */,
 				4FCB17992A4C46CF00CE395D /* Preview Content */,
-				4F9B14452A4D932200610065 /* Categories.json */,
 				4F9B144D2A4D98CC00610065 /* Dishes.json */,
+				4F9B14522A4DAA2B00610065 /* Categories.json */,
 			);
 			path = testTask1;
 			sourceTree = "<group>";
@@ -206,10 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FCB179B2A4C46CF00CE395D /* Preview Assets.xcassets in Resources */,
-				4F9B14462A4D932200610065 /* Categories.json in Resources */,
 				4F9B144E2A4D98CC00610065 /* Dishes.json in Resources */,
 				4FCB17982A4C46CF00CE395D /* Assets.xcassets in Resources */,
 				4FCB17B22A4CAE2E00CE395D /* ToDo in Resources */,
+				4F9B14532A4DAA2B00610065 /* Categories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

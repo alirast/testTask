@@ -10,7 +10,6 @@ import Foundation
 struct Category: Decodable {
     static let allCategories: [Category] = Bundle.main.decode(file: "Categories.json")
     static let sampleCategory: Category = allCategories[0]
-    
     let id: Int
     let name: String
     let imageURL: String

@@ -15,7 +15,7 @@ struct CartView: View {
             Spacer()
             Button {
                 print("Оплатить")
-                smb.fetchCategories()
+                smb.fetch()
             } label: {
                 Text("Оплатить")
                     .font(.subheadline)
