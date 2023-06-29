@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
+    //private var categories: [Category] = Category.allCategories
     @State var isScroll = false
     var body: some View {
   

@@ -3,3 +3,8 @@ combine
 api calls (models according to apis)
 coordinator - how to do it with tab view
 write what actions to organize (functions)
+async await with fetching data or completion handler
+
+todo
+parse json from json file for main view with category model
+

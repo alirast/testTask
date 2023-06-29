@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct CartView: View {
+    var smb = CategoryViewModel()
 
     var body: some View {
         VStack {
             Spacer()
             Button {
                 print("Оплатить")
+                smb.fetchCategories()
             } label: {
                 Text("Оплатить")
                     .font(.subheadline)

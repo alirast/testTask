@@ -10,15 +10,19 @@ import Foundation
 class CategoryViewModel: ObservableObject {
     @Published var categories: [Category] = []
     func fetchCategories() {
-        let api = "https://run.mocky.io/v3/058729bd-1402-4578-88de-265481fd7d54"
-        guard let apiURL = URL(string: api) else { return }
-        URLSession.shared.dataTask(with: apiURL) { (data, response, error) in
-            guard let data = data, error == nil else { return }
-            do {
-                self.categories = try JSONDecoder().decode([Category].self, from: data)
-            } catch {
-                print("failed to decode", error)
+        //guard let jsonFile = Bundle.main.url(forResource: "Categories", withExtension: "json") else { return }
+        guard let jsonFile = Bundle.main.path(forResource: "Categories", ofType: "json") else { return }
+        guard let jsonData = jsonFile.data(using: .utf8) else { fatalError("Failed to convert JSON string to data in categories.") }
+        print(jsonData)
+        do {
+            let response = try JSONDecoder().decode(CategoryResponse.self, from: jsonData)
+            for category in response.categories {
+                print("\(category.id)")
+                print("\(category.name)")
+                print("\(category.imageURL)")
             }
-        }.resume()
+        } catch {
+            print("failed to decode json \(error)")
+        }
     }
 }

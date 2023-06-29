@@ -22,3 +22,7 @@ struct Dish: Decodable {
         case imageURL = "image_url"
     }
 }
+
+struct DishesResponse: Decodable {
+    let dishes: [Dish]
+}
